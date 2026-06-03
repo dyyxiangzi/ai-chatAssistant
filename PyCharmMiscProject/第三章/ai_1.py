@@ -4,6 +4,10 @@ import streamlit as st
 from openai import OpenAI
 from openai.resources.skills.versions import content
 from datetime import datetime
+from pathlib import Path
+
+# 获取当前代码文件所在的文件夹路径
+current_dir = Path(__file__).parent
 
 #设置页面的配置项
 st.set_page_config(
@@ -82,7 +86,7 @@ def delete_session(session_name):
 st.title("AI智能伴侣")
 
 #Logo
-st.logo("resources/logo1.jpg")
+st.logo(str(current_dir / "resources" / "logo1.jpg"))
 
 #系统提示词
 system_prompt = """
