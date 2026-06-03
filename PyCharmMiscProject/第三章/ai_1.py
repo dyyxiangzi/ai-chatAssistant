@@ -53,7 +53,7 @@ def load_sessions():
             if filename.endswith(".json"):
                 sessions_list.append(filename[:-5])
         sessions_list.sort(reverse=True)
-        return sessions_list
+    return sessions_list
 
     #加载指定会话信息的函数
 def load_session(session_name):
