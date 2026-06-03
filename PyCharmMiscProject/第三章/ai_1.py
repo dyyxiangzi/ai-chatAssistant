@@ -2,7 +2,6 @@ import os
 import json
 import streamlit as st
 from openai import OpenAI
-from openai.resources.skills.versions import content
 from datetime import datetime
 from pathlib import Path
 
